@@ -1,0 +1,1038 @@
+
+//========================================
+//
+// Instantiation: test1
+//
+//========================================
+wire  [3:0] a1;
+wire  [3:0] a2;
+wire  [3:0] a3;
+wire        b1;
+wire        b2;
+wire        b3;
+wire  [7:0] d;
+wire        e;
+wire  [3:0] f1;
+wire  [3:0] f2;
+wire  [3:0] f3;
+wire        g1;
+wire        g2;
+wire        g3;
+wire  [7:0] h;
+wire        j;
+
+test1  test1_inst (
+    .a1 ( a1 ), // I [3:0]
+    .a2 ( a2 ), // I [3:0]
+    .a3 ( a3 ), // I [3:0]
+    .b1 ( b1 ), // I
+    .b2 ( b2 ), // I
+    .b3 ( b3 ), // I
+    .d  ( d  ), // I [7:0]
+    .e  ( e  ), // I
+    .f1 ( f1 ), // O [3:0]
+    .f2 ( f2 ), // O [3:0]
+    .f3 ( f3 ), // O [3:0]
+    .g1 ( g1 ), // O
+    .g2 ( g2 ), // O
+    .g3 ( g3 ), // O
+    .h  ( h  ), // O [7:0]
+    .j  ( j  )  // O
+); // instantiation of test1
+
+//========================================
+//
+// Instantiation: test2
+//
+//========================================
+wire  [3:0] a1;
+wire  [3:0] a2;
+wire  [3:0] a3;
+wire        b1;
+wire        b2;
+wire        b3;
+wire  [7:0] d;
+wire        e;
+wire [263:10] f1;
+wire [263:10] f2;
+wire [263:10] f3160;
+wire        g1;
+wire        g2;
+wire        g3;
+wire  [7:0] h;
+wire        j;
+
+test2  test2_inst (
+    .a1    ( a1    ), // I [3:0]
+    .a2    ( a2    ), // I [3:0]
+    .a3    ( a3    ), // I [3:0]
+    .b1    ( b1    ), // I
+    .b2    ( b2    ), // I
+    .b3    ( b3    ), // I
+    .d     ( d     ), // I [7:0]
+    .e     ( e     ), // I
+    .f1    ( f1    ), // O [263:10]
+    .f2    ( f2    ), // O [263:10]
+    .f3160 ( f3160 ), // O [263:10]
+    .g1    ( g1    ), // O
+    .g2    ( g2    ), // O
+    .g3    ( g3    ), // O
+    .h     ( h     ), // O [7:0]
+    .j     ( j     )  // O
+); // instantiation of test2
+
+//========================================
+//
+// Instantiation: test3
+//
+//========================================
+wire  [3:0] a1;
+wire  [3:0] a2;
+wire  [3:0] a3;
+wire        b1;
+wire        b2;
+wire        b3;
+wire [P2-1:0] d;
+wire        e;
+wire [P1-1:0] f1;
+wire [P1-1:0] f2;
+wire [P1-1:0] f3;
+wire        g1;
+wire        g2;
+wire        g3;
+wire  [7:0] h;
+wire        j;
+
+test3  #(
+    .P1 ( 4 ),
+    .P2 ( P1*2 )
+) test3_inst (
+    .a1 ( a1 ), // I [3:0]
+    .a2 ( a2 ), // I [3:0]
+    .a3 ( a3 ), // I [3:0]
+    .b1 ( b1 ), // I
+    .b2 ( b2 ), // I
+    .b3 ( b3 ), // I
+    .d  ( d  ), // I [P2-1:0]
+    .e  ( e  ), // I
+    .f1 ( f1 ), // O [P1-1:0]
+    .f2 ( f2 ), // O [P1-1:0]
+    .f3 ( f3 ), // O [P1-1:0]
+    .g1 ( g1 ), // O
+    .g2 ( g2 ), // O
+    .g3 ( g3 ), // O
+    .h  ( h  ), // O [7:0]
+    .j  ( j  )  // O
+); // instantiation of test3
+
+//========================================
+//
+// Instantiation: test4
+//
+//========================================
+wire  [3:0] a1;
+wire  [3:0] a2;
+wire  [3:0] a3;
+wire        b1;
+wire        b2;
+wire        b3;
+wire [P2-1:0] d;
+wire        e;
+wire [P1-1:0] f1;
+wire [P1-1:0] f2;
+wire [P1-1:0] f3;
+wire        g1;
+wire        g2;
+wire        g3;
+wire  [7:0] h;
+wire        j;
+
+test4  #(
+    .P1 ( 4 ),
+    .P2 ( P1*2 )
+) test4_inst (
+    .a1 ( a1 ), // I [3:0]
+    .a2 ( a2 ), // I [3:0]
+    .a3 ( a3 ), // I [3:0]
+    .b1 ( b1 ), // I
+    .b2 ( b2 ), // I
+    .b3 ( b3 ), // I
+    .d  ( d  ), // I [P2-1:0]
+    .e  ( e  ), // I
+    .f1 ( f1 ), // O [P1-1:0]
+    .f2 ( f2 ), // O [P1-1:0]
+    .f3 ( f3 ), // O [P1-1:0]
+    .g1 ( g1 ), // O
+    .g2 ( g2 ), // O
+    .g3 ( g3 ), // O
+    .h  ( h  ), // O [7:0]
+    .j  ( j  )  // O
+); // instantiation of test4
+
+//========================================
+//
+// Instantiation: test5
+//
+//========================================
+wire  [3:0] a1;
+wire  [3:0] a2;
+wire  [3:0] a3;
+wire        b1;
+wire        b2;
+wire        b3;
+wire [P2-1:0] d;
+wire        e;
+wire [P1-1:0] f1;
+wire [P1-1:0] f2;
+wire [P1-1:0] f3;
+wire        g1;
+wire        g2;
+wire        g3;
+wire  [7:0] h;
+wire        j;
+
+test5  #(
+    .P1 ( 4 ),
+    .P2 ( P1*2 )
+) test5_inst (
+    .a1 ( a1 ), // I [3:0]
+    .a2 ( a2 ), // I [3:0]
+    .a3 ( a3 ), // I [3:0]
+    .b1 ( b1 ), // I
+    .b2 ( b2 ), // I
+    .b3 ( b3 ), // I
+    .d  ( d  ), // I [P2-1:0]
+    .e  ( e  ), // I
+    .f1 ( f1 ), // O [P1-1:0]
+    .f2 ( f2 ), // O [P1-1:0]
+    .f3 ( f3 ), // O [P1-1:0]
+    .g1 ( g1 ), // O
+    .g2 ( g2 ), // O
+    .g3 ( g3 ), // O
+    .h  ( h  ), // O [7:0]
+    .j  ( j  )  // O
+); // instantiation of test5
+//========================================
+//
+// Instantiation: test6
+//
+//========================================
+wire  [3:0] a1;
+wire  [3:0] a2;
+wire  [3:0] a3;
+wire        b1;
+wire        b2;
+wire        b3;
+wire [P2-1:0] d;
+wire        e;
+wire [P1-1:0] f1;
+wire [P1-1:0] f2;
+wire [P1-1:0] f3;
+wire        g1;
+wire        g2;
+wire        g3;
+wire  [7:0] h;
+wire        j;
+
+test6  #(
+    .P1 ( 4 ),
+    .P2 ( P1*2 )
+) test6_inst (
+    .a1 ( a1 ), // I [3:0]
+    .a2 ( a2 ), // I [3:0]
+    .a3 ( a3 ), // I [3:0]
+    .b1 ( b1 ), // I
+    .b2 ( b2 ), // I
+    .b3 ( b3 ), // I
+    .d  ( d  ), // I [P2-1:0]
+    .e  ( e  ), // I
+    .f1 ( f1 ), // O [P1-1:0]
+    .f2 ( f2 ), // O [P1-1:0]
+    .f3 ( f3 ), // O [P1-1:0]
+    .g1 ( g1 ), // O
+    .g2 ( g2 ), // O
+    .g3 ( g3 ), // O
+    .h  ( h  ), // O [7:0]
+    .j  ( j  )  // O
+); // instantiation of test6
+
+//========================================
+//
+// Instantiation: test7
+//
+//========================================
+wire        mpif_clk;
+wire  [9:0] mpif_addr;
+wire [15:0] mpif_wdata;
+wire        rst_n;
+wire        clk_25m;
+wire        EDFA_MUTE7_MODULE2;
+
+test7  #(
+    .DEVICE_ID          ( 16'h0466 ),
+    .REV                ( 16'hF410 ),
+    .DEVICE_ID_ADDR     ( 10'h000 ),
+    .REV_ADDR           ( 10'h001 ),
+    .SCRATCH_1_ADDR     ( 10'h002 )
+) test7_inst (
+    .mpif_clk           ( mpif_clk           ), // I
+    .mpif_addr          ( mpif_addr          ), // I [9:0]
+    .mpif_wdata         ( mpif_wdata         ), // I [15:0]
+    .rst_n              ( rst_n              ), // I
+    .clk_25m            ( clk_25m            ), // I
+    .EDFA_MUTE7_MODULE2 ( EDFA_MUTE7_MODULE2 )  // O
+); // instantiation of test7
+
+//========================================
+//
+// Instantiation: test8
+//
+//========================================
+
+test8  test8_inst (
+); // instantiation of test8
+//========================================
+//
+// Instantiation: test9
+//
+//========================================
+
+test9  #(
+    .DEVICE_ID ( 16'h0466 ),
+    .REV       ( 16'hF410 )
+) test9_inst (
+); // instantiation of test9
+
+//========================================
+//
+// Instantiation: BLK_MEM_GEN_V4_3_output_stage
+//
+//========================================
+wire        CLK;
+wire        RST;
+wire        EN;
+wire        REGCE;
+wire [C_DATA_WIDTH-1:0] DIN;
+wire [C_DATA_WIDTH-1:0] DOUT;
+wire        SBITERR_IN;
+wire        DBITERR_IN;
+wire        SBITERR;
+wire        DBITERR;
+wire [C_ADDRB_WIDTH-1:0] RDADDRECC_IN;
+wire [C_ADDRB_WIDTH-1:0] RDADDRECC;
+
+BLK_MEM_GEN_V4_3_output_stage  #(
+    .C_FAMILY              ( "virtex5" ),
+    .C_XDEVICEFAMILY       ( "virtex5" ),
+    .C_RST_TYPE            ( "SYNC" ),
+    .C_HAS_RST             ( 0 ),
+    .C_RSTRAM              ( 0 ),
+    .C_RST_PRIORITY        ( "CE" ),
+    .C_INIT_VAL            ( "0" ),
+    .C_HAS_EN              ( 0 ),
+    .C_HAS_REGCE           ( 0 ),
+    .C_DATA_WIDTH          ( 32 ),
+    .C_ADDRB_WIDTH         ( 10 ),
+    .C_HAS_MEM_OUTPUT_REGS ( 0 ),
+    .C_USE_SOFTECC         ( 0 ),
+    .C_USE_ECC             ( 0 ),
+    .NUM_STAGES            ( 1 ),
+    .FLOP_DELAY            ( 100 )
+) BLK_MEM_GEN_V4_3_output_stage_inst (
+    .CLK          ( CLK          ), // I
+    .RST          ( RST          ), // I
+    .EN           ( EN           ), // I
+    .REGCE        ( REGCE        ), // I
+    .DIN          ( DIN          ), // I [C_DATA_WIDTH-1:0]
+    .DOUT         ( DOUT         ), // O [C_DATA_WIDTH-1:0]
+    .SBITERR_IN   ( SBITERR_IN   ), // I
+    .DBITERR_IN   ( DBITERR_IN   ), // I
+    .SBITERR      ( SBITERR      ), // O
+    .DBITERR      ( DBITERR      ), // O
+    .RDADDRECC_IN ( RDADDRECC_IN ), // I [C_ADDRB_WIDTH-1:0]
+    .RDADDRECC    ( RDADDRECC    )  // O [C_ADDRB_WIDTH-1:0]
+); // instantiation of BLK_MEM_GEN_V4_3_output_stage
+//========================================
+//
+// Instantiation: BLK_MEM_GEN_V4_3_softecc_output_reg_stage
+//
+//========================================
+wire        CLK;
+wire [C_DATA_WIDTH-1:0] DIN;
+wire [C_DATA_WIDTH-1:0] DOUT;
+wire        SBITERR_IN;
+wire        DBITERR_IN;
+wire        SBITERR;
+wire        DBITERR;
+wire [C_ADDRB_WIDTH-1:0] RDADDRECC_IN;
+wire [C_ADDRB_WIDTH-1:0] RDADDRECC;
+
+BLK_MEM_GEN_V4_3_softecc_output_reg_stage  #(
+    .C_DATA_WIDTH                ( 32 ),
+    .C_ADDRB_WIDTH               ( 10 ),
+    .C_HAS_SOFTECC_OUTPUT_REGS_B ( 0 ),
+    .C_USE_SOFTECC               ( 0 ),
+    .FLOP_DELAY                  ( 100 )
+) BLK_MEM_GEN_V4_3_softecc_output_reg_stage_inst (
+    .CLK          ( CLK          ), // I
+    .DIN          ( DIN          ), // I [C_DATA_WIDTH-1:0]
+    .DOUT         ( DOUT         ), // O [C_DATA_WIDTH-1:0]
+    .SBITERR_IN   ( SBITERR_IN   ), // I
+    .DBITERR_IN   ( DBITERR_IN   ), // I
+    .SBITERR      ( SBITERR      ), // O
+    .DBITERR      ( DBITERR      ), // O
+    .RDADDRECC_IN ( RDADDRECC_IN ), // I [C_ADDRB_WIDTH-1:0]
+    .RDADDRECC    ( RDADDRECC    )  // O [C_ADDRB_WIDTH-1:0]
+); // instantiation of BLK_MEM_GEN_V4_3_softecc_output_reg_stage
+//========================================
+//
+// Instantiation: BLK_MEM_GEN_V4_3_mem_module
+//
+//========================================
+wire        CLKA;
+wire        RSTA;
+wire        ENA;
+wire        REGCEA;
+wire [C_WEA_WIDTH-1:0] WEA;
+wire [C_ADDRA_WIDTH-1:0] ADDRA;
+wire [C_WRITE_WIDTH_A-1:0] DINA;
+wire [C_READ_WIDTH_A-1:0] DOUTA;
+wire        CLKB;
+wire        RSTB;
+wire        ENB;
+wire        REGCEB;
+wire [C_WEB_WIDTH-1:0] WEB;
+wire [C_ADDRB_WIDTH-1:0] ADDRB;
+wire [C_WRITE_WIDTH_B-1:0] DINB;
+wire [C_READ_WIDTH_B-1:0] DOUTB;
+wire        INJECTSBITERR;
+wire        INJECTDBITERR;
+wire        SBITERR;
+wire        DBITERR;
+wire [C_ADDRB_WIDTH-1:0] RDADDRECC;
+
+BLK_MEM_GEN_V4_3_mem_module  #(
+    .C_CORENAME                  ( "blk_mem_gen_v4_3" ),
+    .C_FAMILY                    ( "virtex6" ),
+    .C_XDEVICEFAMILY             ( "virtex6" ),
+    .C_MEM_TYPE                  ( 2 ),
+    .C_BYTE_SIZE                 ( 9 ),
+    .C_ALGORITHM                 ( 1 ),
+    .C_PRIM_TYPE                 ( 3 ),
+    .C_LOAD_INIT_FILE            ( 0 ),
+    .C_INIT_FILE_NAME            ( "" ),
+    .C_USE_DEFAULT_DATA          ( 0 ),
+    .C_DEFAULT_DATA              ( "0" ),
+    .C_RST_TYPE                  ( "SYNC" ),
+    .C_HAS_RSTA                  ( 0 ),
+    .C_RST_PRIORITY_A            ( "CE" ),
+    .C_RSTRAM_A                  ( 0 ),
+    .C_INITA_VAL                 ( "0" ),
+    .C_HAS_ENA                   ( 1 ),
+    .C_HAS_REGCEA                ( 0 ),
+    .C_USE_BYTE_WEA              ( 0 ),
+    .C_WEA_WIDTH                 ( 1 ),
+    .C_WRITE_MODE_A              ( "WRITE_FIRST" ),
+    .C_WRITE_WIDTH_A             ( 32 ),
+    .C_READ_WIDTH_A              ( 32 ),
+    .C_WRITE_DEPTH_A             ( 64 ),
+    .C_READ_DEPTH_A              ( 64 ),
+    .C_ADDRA_WIDTH               ( 5 ),
+    .C_HAS_RSTB                  ( 0 ),
+    .C_RST_PRIORITY_B            ( "CE" ),
+    .C_RSTRAM_B                  ( 0 ),
+    .C_INITB_VAL                 ( "0" ),
+    .C_HAS_ENB                   ( 1 ),
+    .C_HAS_REGCEB                ( 0 ),
+    .C_USE_BYTE_WEB              ( 0 ),
+    .C_WEB_WIDTH                 ( 1 ),
+    .C_WRITE_MODE_B              ( "WRITE_FIRST" ),
+    .C_WRITE_WIDTH_B             ( 32 ),
+    .C_READ_WIDTH_B              ( 32 ),
+    .C_WRITE_DEPTH_B             ( 64 ),
+    .C_READ_DEPTH_B              ( 64 ),
+    .C_ADDRB_WIDTH               ( 5 ),
+    .C_HAS_MEM_OUTPUT_REGS_A     ( 0 ),
+    .C_HAS_MEM_OUTPUT_REGS_B     ( 0 ),
+    .C_HAS_MUX_OUTPUT_REGS_A     ( 0 ),
+    .C_HAS_MUX_OUTPUT_REGS_B     ( 0 ),
+    .C_HAS_SOFTECC_INPUT_REGS_A  ( 0 ),
+    .C_HAS_SOFTECC_OUTPUT_REGS_B ( 0 ),
+    .C_MUX_PIPELINE_STAGES       ( 0 ),
+    .C_USE_SOFTECC               ( 0 ),
+    .C_USE_ECC                   ( 0 ),
+    .C_HAS_INJECTERR             ( 0 ),
+    .C_SIM_COLLISION_CHECK       ( "NONE" ),
+    .C_COMMON_CLK                ( 1 ),
+    .FLOP_DELAY                  ( 100 ),
+    .C_DISABLE_WARN_BHV_COLL     ( 0 ),
+    .C_DISABLE_WARN_BHV_RANGE    ( 0 )
+) BLK_MEM_GEN_V4_3_mem_module_inst (
+    .CLKA          ( CLKA          ), // I
+    .RSTA          ( RSTA          ), // I
+    .ENA           ( ENA           ), // I
+    .REGCEA        ( REGCEA        ), // I
+    .WEA           ( WEA           ), // I [C_WEA_WIDTH-1:0]
+    .ADDRA         ( ADDRA         ), // I [C_ADDRA_WIDTH-1:0]
+    .DINA          ( DINA          ), // I [C_WRITE_WIDTH_A-1:0]
+    .DOUTA         ( DOUTA         ), // O [C_READ_WIDTH_A-1:0]
+    .CLKB          ( CLKB          ), // I
+    .RSTB          ( RSTB          ), // I
+    .ENB           ( ENB           ), // I
+    .REGCEB        ( REGCEB        ), // I
+    .WEB           ( WEB           ), // I [C_WEB_WIDTH-1:0]
+    .ADDRB         ( ADDRB         ), // I [C_ADDRB_WIDTH-1:0]
+    .DINB          ( DINB          ), // I [C_WRITE_WIDTH_B-1:0]
+    .DOUTB         ( DOUTB         ), // O [C_READ_WIDTH_B-1:0]
+    .INJECTSBITERR ( INJECTSBITERR ), // I
+    .INJECTDBITERR ( INJECTDBITERR ), // I
+    .SBITERR       ( SBITERR       ), // O
+    .DBITERR       ( DBITERR       ), // O
+    .RDADDRECC     ( RDADDRECC     )  // O [C_ADDRB_WIDTH-1:0]
+); // instantiation of BLK_MEM_GEN_V4_3_mem_module
+//========================================
+//
+// Instantiation: BLK_MEM_GEN_V4_3
+//
+//========================================
+wire        CLKA;
+wire        RSTA;
+wire        ENA;
+wire        REGCEA;
+wire [C_WEA_WIDTH-1:0] WEA;
+wire [C_ADDRA_WIDTH-1:0] ADDRA;
+wire [C_WRITE_WIDTH_A-1:0] DINA;
+wire [C_READ_WIDTH_A-1:0] DOUTA;
+wire        CLKB;
+wire        RSTB;
+wire        ENB;
+wire        REGCEB;
+wire [C_WEB_WIDTH-1:0] WEB;
+wire [C_ADDRB_WIDTH-1:0] ADDRB;
+wire [C_WRITE_WIDTH_B-1:0] DINB;
+wire [C_READ_WIDTH_B-1:0] DOUTB;
+wire        INJECTSBITERR;
+wire        INJECTDBITERR;
+wire        SBITERR;
+wire        DBITERR;
+wire [C_ADDRB_WIDTH-1:0] RDADDRECC;
+
+BLK_MEM_GEN_V4_3  #(
+    .C_CORENAME                  ( "blk_mem_gen_v4_3" ),
+    .C_FAMILY                    ( "virtex6" ),
+    .C_XDEVICEFAMILY             ( "virtex6" ),
+    .C_MEM_TYPE                  ( 2 ),
+    .C_BYTE_SIZE                 ( 9 ),
+    .C_ALGORITHM                 ( 1 ),
+    .C_PRIM_TYPE                 ( 3 ),
+    .C_LOAD_INIT_FILE            ( 0 ),
+    .C_INIT_FILE_NAME            ( "" ),
+    .C_USE_DEFAULT_DATA          ( 0 ),
+    .C_DEFAULT_DATA              ( "0" ),
+    .C_RST_TYPE                  ( "SYNC" ),
+    .C_HAS_RSTA                  ( 0 ),
+    .C_RST_PRIORITY_A            ( "CE" ),
+    .C_RSTRAM_A                  ( 0 ),
+    .C_INITA_VAL                 ( "0" ),
+    .C_HAS_ENA                   ( 1 ),
+    .C_HAS_REGCEA                ( 0 ),
+    .C_USE_BYTE_WEA              ( 0 ),
+    .C_WEA_WIDTH                 ( 1 ),
+    .C_WRITE_MODE_A              ( "WRITE_FIRST" ),
+    .C_WRITE_WIDTH_A             ( 32 ),
+    .C_READ_WIDTH_A              ( 32 ),
+    .C_WRITE_DEPTH_A             ( 64 ),
+    .C_READ_DEPTH_A              ( 64 ),
+    .C_ADDRA_WIDTH               ( 5 ),
+    .C_HAS_RSTB                  ( 0 ),
+    .C_RST_PRIORITY_B            ( "CE" ),
+    .C_RSTRAM_B                  ( 0 ),
+    .C_INITB_VAL                 ( "0" ),
+    .C_HAS_ENB                   ( 1 ),
+    .C_HAS_REGCEB                ( 0 ),
+    .C_USE_BYTE_WEB              ( 0 ),
+    .C_WEB_WIDTH                 ( 1 ),
+    .C_WRITE_MODE_B              ( "WRITE_FIRST" ),
+    .C_WRITE_WIDTH_B             ( 32 ),
+    .C_READ_WIDTH_B              ( 32 ),
+    .C_WRITE_DEPTH_B             ( 64 ),
+    .C_READ_DEPTH_B              ( 64 ),
+    .C_ADDRB_WIDTH               ( 5 ),
+    .C_HAS_MEM_OUTPUT_REGS_A     ( 0 ),
+    .C_HAS_MEM_OUTPUT_REGS_B     ( 0 ),
+    .C_HAS_MUX_OUTPUT_REGS_A     ( 0 ),
+    .C_HAS_MUX_OUTPUT_REGS_B     ( 0 ),
+    .C_HAS_SOFTECC_INPUT_REGS_A  ( 0 ),
+    .C_HAS_SOFTECC_OUTPUT_REGS_B ( 0 ),
+    .C_MUX_PIPELINE_STAGES       ( 0 ),
+    .C_USE_SOFTECC               ( 0 ),
+    .C_USE_ECC                   ( 0 ),
+    .C_HAS_INJECTERR             ( 0 ),
+    .C_SIM_COLLISION_CHECK       ( "NONE" ),
+    .C_COMMON_CLK                ( 1 ),
+    .C_DISABLE_WARN_BHV_COLL     ( 0 ),
+    .C_DISABLE_WARN_BHV_RANGE    ( 0 )
+) BLK_MEM_GEN_V4_3_inst (
+    .CLKA          ( CLKA          ), // I
+    .RSTA          ( RSTA          ), // I
+    .ENA           ( ENA           ), // I
+    .REGCEA        ( REGCEA        ), // I
+    .WEA           ( WEA           ), // I [C_WEA_WIDTH-1:0]
+    .ADDRA         ( ADDRA         ), // I [C_ADDRA_WIDTH-1:0]
+    .DINA          ( DINA          ), // I [C_WRITE_WIDTH_A-1:0]
+    .DOUTA         ( DOUTA         ), // O [C_READ_WIDTH_A-1:0]
+    .CLKB          ( CLKB          ), // I
+    .RSTB          ( RSTB          ), // I
+    .ENB           ( ENB           ), // I
+    .REGCEB        ( REGCEB        ), // I
+    .WEB           ( WEB           ), // I [C_WEB_WIDTH-1:0]
+    .ADDRB         ( ADDRB         ), // I [C_ADDRB_WIDTH-1:0]
+    .DINB          ( DINB          ), // I [C_WRITE_WIDTH_B-1:0]
+    .DOUTB         ( DOUTB         ), // O [C_READ_WIDTH_B-1:0]
+    .INJECTSBITERR ( INJECTSBITERR ), // I
+    .INJECTDBITERR ( INJECTDBITERR ), // I
+    .SBITERR       ( SBITERR       ), // O
+    .DBITERR       ( DBITERR       ), // O
+    .RDADDRECC     ( RDADDRECC     )  // O [C_ADDRB_WIDTH-1:0]
+); // instantiation of BLK_MEM_GEN_V4_3
+
+//========================================
+//
+// Instantiation: FIFO_GENERATOR_V6_2
+//
+//========================================
+wire        BACKUP;
+wire        BACKUP_MARKER;
+wire        CLK;
+wire        RST;
+wire        SRST;
+wire        WR_CLK;
+wire        WR_RST;
+wire        RD_CLK;
+wire        RD_RST;
+wire [C_DIN_WIDTH-1:0] DIN;
+wire        WR_EN;
+wire        RD_EN;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH_ASSERT;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH_NEGATE;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH_ASSERT;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH_NEGATE;
+wire        INT_CLK;
+wire        INJECTDBITERR;
+wire        INJECTSBITERR;
+wire [C_DOUT_WIDTH-1:0] DOUT;
+wire        FULL;
+wire        ALMOST_FULL;
+wire        WR_ACK;
+wire        OVERFLOW;
+wire        EMPTY;
+wire        ALMOST_EMPTY;
+wire        VALID;
+wire        UNDERFLOW;
+wire [C_DATA_COUNT_WIDTH-1:0] DATA_COUNT;
+wire [C_RD_DATA_COUNT_WIDTH-1:0] RD_DATA_COUNT;
+wire [C_WR_DATA_COUNT_WIDTH-1:0] WR_DATA_COUNT;
+wire        PROG_FULL;
+wire        PROG_EMPTY;
+wire        SBITERR;
+wire        DBITERR;
+
+FIFO_GENERATOR_V6_2  #(
+    .C_COMMON_CLOCK                 ( 0 ),
+    .C_COUNT_TYPE                   ( 0 ),
+    .C_DATA_COUNT_WIDTH             ( 2 ),
+    .C_DEFAULT_VALUE                ( "" ),
+    .C_DIN_WIDTH                    ( 8 ),
+    .C_DOUT_RST_VAL                 ( "" ),
+    .C_DOUT_WIDTH                   ( 8 ),
+    .C_ENABLE_RLOCS                 ( 0 ),
+    .C_FAMILY                       ( "virtex6" ),
+    .C_FULL_FLAGS_RST_VAL           ( 1 ),
+    .C_HAS_ALMOST_EMPTY             ( 0 ),
+    .C_HAS_ALMOST_FULL              ( 0 ),
+    .C_HAS_BACKUP                   ( 0 ),
+    .C_HAS_DATA_COUNT               ( 0 ),
+    .C_HAS_INT_CLK                  ( 0 ),
+    .C_HAS_MEMINIT_FILE             ( 0 ),
+    .C_HAS_OVERFLOW                 ( 0 ),
+    .C_HAS_RD_DATA_COUNT            ( 0 ),
+    .C_HAS_RD_RST                   ( 0 ),
+    .C_HAS_RST                      ( 0 ),
+    .C_HAS_SRST                     ( 0 ),
+    .C_HAS_UNDERFLOW                ( 0 ),
+    .C_HAS_VALID                    ( 0 ),
+    .C_HAS_WR_ACK                   ( 0 ),
+    .C_HAS_WR_DATA_COUNT            ( 0 ),
+    .C_HAS_WR_RST                   ( 0 ),
+    .C_IMPLEMENTATION_TYPE          ( 0 ),
+    .C_INIT_WR_PNTR_VAL             ( 0 ),
+    .C_MEMORY_TYPE                  ( 1 ),
+    .C_MIF_FILE_NAME                ( "" ),
+    .C_OPTIMIZATION_MODE            ( 0 ),
+    .C_OVERFLOW_LOW                 ( 0 ),
+    .C_PRELOAD_LATENCY              ( 1 ),
+    .C_PRELOAD_REGS                 ( 0 ),
+    .C_PRIM_FIFO_TYPE               ( "" ),
+    .C_PROG_EMPTY_THRESH_ASSERT_VAL ( 0 ),
+    .C_PROG_EMPTY_THRESH_NEGATE_VAL ( 0 ),
+    .C_PROG_EMPTY_TYPE              ( 0 ),
+    .C_PROG_FULL_THRESH_ASSERT_VAL  ( 0 ),
+    .C_PROG_FULL_THRESH_NEGATE_VAL  ( 0 ),
+    .C_PROG_FULL_TYPE               ( 0 ),
+    .C_RD_DATA_COUNT_WIDTH          ( 2 ),
+    .C_RD_DEPTH                     ( 256 ),
+    .C_RD_FREQ                      ( 1 ),
+    .C_RD_PNTR_WIDTH                ( 8 ),
+    .C_UNDERFLOW_LOW                ( 0 ),
+    .C_USE_DOUT_RST                 ( 0 ),
+    .C_USE_ECC                      ( 0 ),
+    .C_USE_EMBEDDED_REG             ( 0 ),
+    .C_USE_FIFO16_FLAGS             ( 0 ),
+    .C_USE_FWFT_DATA_COUNT          ( 0 ),
+    .C_VALID_LOW                    ( 0 ),
+    .C_WR_ACK_LOW                   ( 0 ),
+    .C_WR_DATA_COUNT_WIDTH          ( 2 ),
+    .C_WR_DEPTH                     ( 256 ),
+    .C_WR_FREQ                      ( 1 ),
+    .C_WR_PNTR_WIDTH                ( 8 ),
+    .C_WR_RESPONSE_LATENCY          ( 1 ),
+    .C_MSGON_VAL                    ( 1 ),
+    .C_ENABLE_RST_SYNC              ( 1 ),
+    .C_ERROR_INJECTION_TYPE         ( 0 ),
+    .C_VERILOG_IMPL                 ( (C_IMPLEMENTATION_TYPE==2)?1:0 )
+) FIFO_GENERATOR_V6_2_inst (
+    .BACKUP                   ( BACKUP                   ), // I
+    .BACKUP_MARKER            ( BACKUP_MARKER            ), // I
+    .CLK                      ( CLK                      ), // I
+    .RST                      ( RST                      ), // I
+    .SRST                     ( SRST                     ), // I
+    .WR_CLK                   ( WR_CLK                   ), // I
+    .WR_RST                   ( WR_RST                   ), // I
+    .RD_CLK                   ( RD_CLK                   ), // I
+    .RD_RST                   ( RD_RST                   ), // I
+    .DIN                      ( DIN                      ), // I [C_DIN_WIDTH-1:0]
+    .WR_EN                    ( WR_EN                    ), // I
+    .RD_EN                    ( RD_EN                    ), // I
+    .PROG_EMPTY_THRESH        ( PROG_EMPTY_THRESH        ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_EMPTY_THRESH_ASSERT ( PROG_EMPTY_THRESH_ASSERT ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_EMPTY_THRESH_NEGATE ( PROG_EMPTY_THRESH_NEGATE ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH         ( PROG_FULL_THRESH         ), // I [C_WR_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH_ASSERT  ( PROG_FULL_THRESH_ASSERT  ), // I [C_WR_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH_NEGATE  ( PROG_FULL_THRESH_NEGATE  ), // I [C_WR_PNTR_WIDTH-1:0]
+    .INT_CLK                  ( INT_CLK                  ), // I
+    .INJECTDBITERR            ( INJECTDBITERR            ), // I
+    .INJECTSBITERR            ( INJECTSBITERR            ), // I
+    .DOUT                     ( DOUT                     ), // O [C_DOUT_WIDTH-1:0]
+    .FULL                     ( FULL                     ), // O
+    .ALMOST_FULL              ( ALMOST_FULL              ), // O
+    .WR_ACK                   ( WR_ACK                   ), // O
+    .OVERFLOW                 ( OVERFLOW                 ), // O
+    .EMPTY                    ( EMPTY                    ), // O
+    .ALMOST_EMPTY             ( ALMOST_EMPTY             ), // O
+    .VALID                    ( VALID                    ), // O
+    .UNDERFLOW                ( UNDERFLOW                ), // O
+    .DATA_COUNT               ( DATA_COUNT               ), // O [C_DATA_COUNT_WIDTH-1:0]
+    .RD_DATA_COUNT            ( RD_DATA_COUNT            ), // O [C_RD_DATA_COUNT_WIDTH-1:0]
+    .WR_DATA_COUNT            ( WR_DATA_COUNT            ), // O [C_WR_DATA_COUNT_WIDTH-1:0]
+    .PROG_FULL                ( PROG_FULL                ), // O
+    .PROG_EMPTY               ( PROG_EMPTY               ), // O
+    .SBITERR                  ( SBITERR                  ), // O
+    .DBITERR                  ( DBITERR                  )  // O
+); // instantiation of FIFO_GENERATOR_V6_2
+//========================================
+//
+// Instantiation: fifo_generator_v6_2_bhv_ver_as
+//
+//========================================
+wire [C_DIN_WIDTH-1:0] DIN;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH_ASSERT;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH_NEGATE;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH_ASSERT;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH_NEGATE;
+wire        RD_CLK;
+wire        RD_EN;
+wire        RD_EN_USER;
+wire        RST;
+wire        RST_FULL_GEN;
+wire        RST_FULL_FF;
+wire        WR_RST;
+wire        RD_RST;
+wire        WR_CLK;
+wire        WR_EN;
+wire        INJECTDBITERR;
+wire        INJECTSBITERR;
+wire        USER_EMPTY_FB;
+wire        ALMOST_EMPTY;
+wire        ALMOST_FULL;
+wire [C_DOUT_WIDTH-1:0] DOUT;
+wire        EMPTY;
+wire        FULL;
+wire        OVERFLOW;
+wire        PROG_EMPTY;
+wire        PROG_FULL;
+wire        VALID;
+wire [C_RD_DATA_COUNT_WIDTH-1:0] RD_DATA_COUNT;
+wire        UNDERFLOW;
+wire        WR_ACK;
+wire [C_WR_DATA_COUNT_WIDTH-1:0] WR_DATA_COUNT;
+wire        SBITERR;
+wire        DBITERR;
+
+fifo_generator_v6_2_bhv_ver_as  #(
+    .C_DATA_COUNT_WIDTH             ( 2 ),
+    .C_DIN_WIDTH                    ( 8 ),
+    .C_DOUT_RST_VAL                 ( "" ),
+    .C_DOUT_WIDTH                   ( 8 ),
+    .C_FULL_FLAGS_RST_VAL           ( 1 ),
+    .C_HAS_ALMOST_EMPTY             ( 0 ),
+    .C_HAS_ALMOST_FULL              ( 0 ),
+    .C_HAS_DATA_COUNT               ( 0 ),
+    .C_HAS_OVERFLOW                 ( 0 ),
+    .C_HAS_RD_DATA_COUNT            ( 0 ),
+    .C_HAS_RST                      ( 0 ),
+    .C_HAS_UNDERFLOW                ( 0 ),
+    .C_HAS_VALID                    ( 0 ),
+    .C_HAS_WR_ACK                   ( 0 ),
+    .C_HAS_WR_DATA_COUNT            ( 0 ),
+    .C_IMPLEMENTATION_TYPE          ( 0 ),
+    .C_MEMORY_TYPE                  ( 1 ),
+    .C_OVERFLOW_LOW                 ( 0 ),
+    .C_PRELOAD_LATENCY              ( 1 ),
+    .C_PRELOAD_REGS                 ( 0 ),
+    .C_PROG_EMPTY_THRESH_ASSERT_VAL ( 0 ),
+    .C_PROG_EMPTY_THRESH_NEGATE_VAL ( 0 ),
+    .C_PROG_EMPTY_TYPE              ( 0 ),
+    .C_PROG_FULL_THRESH_ASSERT_VAL  ( 0 ),
+    .C_PROG_FULL_THRESH_NEGATE_VAL  ( 0 ),
+    .C_PROG_FULL_TYPE               ( 0 ),
+    .C_RD_DATA_COUNT_WIDTH          ( 2 ),
+    .C_RD_DEPTH                     ( 256 ),
+    .C_RD_PNTR_WIDTH                ( 8 ),
+    .C_UNDERFLOW_LOW                ( 0 ),
+    .C_USE_DOUT_RST                 ( 0 ),
+    .C_USE_EMBEDDED_REG             ( 0 ),
+    .C_USE_FWFT_DATA_COUNT          ( 0 ),
+    .C_VALID_LOW                    ( 0 ),
+    .C_WR_ACK_LOW                   ( 0 ),
+    .C_WR_DATA_COUNT_WIDTH          ( 2 ),
+    .C_WR_DEPTH                     ( 256 ),
+    .C_WR_PNTR_WIDTH                ( 8 ),
+    .C_USE_ECC                      ( 0 ),
+    .C_ENABLE_RST_SYNC              ( 1 ),
+    .C_ERROR_INJECTION_TYPE         ( 0 ),
+    .C_DEPTH_RATIO_WR               ( (C_WR_DEPTH>C_RD_DEPTH)?(C_WR_DEPTH/C_RD_DEPTH):1 ),
+    .C_DEPTH_RATIO_RD               ( (C_RD_DEPTH>C_WR_DEPTH)?(C_RD_DEPTH/C_WR_DEPTH):1 ),
+    .C_FIFO_WR_DEPTH                ( C_WR_DEPTH-1 ),
+    .C_FIFO_RD_DEPTH                ( C_RD_DEPTH-1 ),
+    .reads_per_write                ( C_DIN_WIDTH/C_DOUT_WIDTH ),
+    .log2_reads_per_write           ( log2_val(reads_per_write) ),
+    .writes_per_read                ( C_DOUT_WIDTH/C_DIN_WIDTH ),
+    .log2_writes_per_read           ( log2_val(writes_per_read) )
+) fifo_generator_v6_2_bhv_ver_as_inst (
+    .DIN                      ( DIN                      ), // I [C_DIN_WIDTH-1:0]
+    .PROG_EMPTY_THRESH        ( PROG_EMPTY_THRESH        ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_EMPTY_THRESH_ASSERT ( PROG_EMPTY_THRESH_ASSERT ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_EMPTY_THRESH_NEGATE ( PROG_EMPTY_THRESH_NEGATE ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH         ( PROG_FULL_THRESH         ), // I [C_WR_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH_ASSERT  ( PROG_FULL_THRESH_ASSERT  ), // I [C_WR_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH_NEGATE  ( PROG_FULL_THRESH_NEGATE  ), // I [C_WR_PNTR_WIDTH-1:0]
+    .RD_CLK                   ( RD_CLK                   ), // I
+    .RD_EN                    ( RD_EN                    ), // I
+    .RD_EN_USER               ( RD_EN_USER               ), // I
+    .RST                      ( RST                      ), // I
+    .RST_FULL_GEN             ( RST_FULL_GEN             ), // I
+    .RST_FULL_FF              ( RST_FULL_FF              ), // I
+    .WR_RST                   ( WR_RST                   ), // I
+    .RD_RST                   ( RD_RST                   ), // I
+    .WR_CLK                   ( WR_CLK                   ), // I
+    .WR_EN                    ( WR_EN                    ), // I
+    .INJECTDBITERR            ( INJECTDBITERR            ), // I
+    .INJECTSBITERR            ( INJECTSBITERR            ), // I
+    .USER_EMPTY_FB            ( USER_EMPTY_FB            ), // I
+    .ALMOST_EMPTY             ( ALMOST_EMPTY             ), // O
+    .ALMOST_FULL              ( ALMOST_FULL              ), // O
+    .DOUT                     ( DOUT                     ), // O [C_DOUT_WIDTH-1:0]
+    .EMPTY                    ( EMPTY                    ), // O
+    .FULL                     ( FULL                     ), // O
+    .OVERFLOW                 ( OVERFLOW                 ), // O
+    .PROG_EMPTY               ( PROG_EMPTY               ), // O
+    .PROG_FULL                ( PROG_FULL                ), // O
+    .VALID                    ( VALID                    ), // O
+    .RD_DATA_COUNT            ( RD_DATA_COUNT            ), // O [C_RD_DATA_COUNT_WIDTH-1:0]
+    .UNDERFLOW                ( UNDERFLOW                ), // O
+    .WR_ACK                   ( WR_ACK                   ), // O
+    .WR_DATA_COUNT            ( WR_DATA_COUNT            ), // O [C_WR_DATA_COUNT_WIDTH-1:0]
+    .SBITERR                  ( SBITERR                  ), // O
+    .DBITERR                  ( DBITERR                  )  // O
+); // instantiation of fifo_generator_v6_2_bhv_ver_as
+//========================================
+//
+// Instantiation: fifo_generator_v6_2_bhv_ver_ss
+//
+//========================================
+wire        CLK;
+wire [C_DIN_WIDTH-1:0] DIN;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH_ASSERT;
+wire [C_RD_PNTR_WIDTH-1:0] PROG_EMPTY_THRESH_NEGATE;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH_ASSERT;
+wire [C_WR_PNTR_WIDTH-1:0] PROG_FULL_THRESH_NEGATE;
+wire        RD_EN;
+wire        RST;
+wire        RST_FULL_GEN;
+wire        RST_FULL_FF;
+wire        SRST;
+wire        WR_EN;
+wire        INJECTDBITERR;
+wire        INJECTSBITERR;
+wire        ALMOST_EMPTY;
+wire        ALMOST_FULL;
+wire [C_DATA_COUNT_WIDTH-1:0] DATA_COUNT;
+wire [C_DOUT_WIDTH-1:0] DOUT;
+wire        EMPTY;
+wire        FULL;
+wire        OVERFLOW;
+wire        PROG_EMPTY;
+wire        PROG_FULL;
+wire        VALID;
+wire        UNDERFLOW;
+wire        WR_ACK;
+wire        SBITERR;
+wire        DBITERR;
+
+fifo_generator_v6_2_bhv_ver_ss  #(
+    .C_DATA_COUNT_WIDTH             ( 2 ),
+    .C_DIN_WIDTH                    ( 8 ),
+    .C_DOUT_RST_VAL                 ( "" ),
+    .C_DOUT_WIDTH                   ( 8 ),
+    .C_FULL_FLAGS_RST_VAL           ( 1 ),
+    .C_HAS_ALMOST_EMPTY             ( 0 ),
+    .C_HAS_ALMOST_FULL              ( 0 ),
+    .C_HAS_DATA_COUNT               ( 0 ),
+    .C_HAS_OVERFLOW                 ( 0 ),
+    .C_HAS_RD_DATA_COUNT            ( 0 ),
+    .C_HAS_RST                      ( 0 ),
+    .C_HAS_SRST                     ( 0 ),
+    .C_HAS_UNDERFLOW                ( 0 ),
+    .C_HAS_VALID                    ( 0 ),
+    .C_HAS_WR_ACK                   ( 0 ),
+    .C_HAS_WR_DATA_COUNT            ( 0 ),
+    .C_IMPLEMENTATION_TYPE          ( 0 ),
+    .C_MEMORY_TYPE                  ( 1 ),
+    .C_OVERFLOW_LOW                 ( 0 ),
+    .C_PRELOAD_LATENCY              ( 1 ),
+    .C_PRELOAD_REGS                 ( 0 ),
+    .C_PROG_EMPTY_THRESH_ASSERT_VAL ( 0 ),
+    .C_PROG_EMPTY_THRESH_NEGATE_VAL ( 0 ),
+    .C_PROG_EMPTY_TYPE              ( 0 ),
+    .C_PROG_FULL_THRESH_ASSERT_VAL  ( 0 ),
+    .C_PROG_FULL_THRESH_NEGATE_VAL  ( 0 ),
+    .C_PROG_FULL_TYPE               ( 0 ),
+    .C_RD_DATA_COUNT_WIDTH          ( 2 ),
+    .C_RD_DEPTH                     ( 256 ),
+    .C_RD_PNTR_WIDTH                ( 8 ),
+    .C_UNDERFLOW_LOW                ( 0 ),
+    .C_USE_DOUT_RST                 ( 0 ),
+    .C_USE_EMBEDDED_REG             ( 0 ),
+    .C_USE_FWFT_DATA_COUNT          ( 0 ),
+    .C_VALID_LOW                    ( 0 ),
+    .C_WR_ACK_LOW                   ( 0 ),
+    .C_WR_DATA_COUNT_WIDTH          ( 2 ),
+    .C_WR_DEPTH                     ( 256 ),
+    .C_WR_PNTR_WIDTH                ( 8 ),
+    .C_USE_ECC                      ( 0 ),
+    .C_ENABLE_RST_SYNC              ( 1 ),
+    .C_ERROR_INJECTION_TYPE         ( 0 ),
+    .C_HAS_FAST_FIFO                ( 0 ),
+    .C_FIFO_WR_DEPTH                ( C_WR_DEPTH ),
+    .C_FIFO_RD_DEPTH                ( C_RD_DEPTH )
+) fifo_generator_v6_2_bhv_ver_ss_inst (
+    .CLK                      ( CLK                      ), // I
+    .DIN                      ( DIN                      ), // I [C_DIN_WIDTH-1:0]
+    .PROG_EMPTY_THRESH        ( PROG_EMPTY_THRESH        ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_EMPTY_THRESH_ASSERT ( PROG_EMPTY_THRESH_ASSERT ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_EMPTY_THRESH_NEGATE ( PROG_EMPTY_THRESH_NEGATE ), // I [C_RD_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH         ( PROG_FULL_THRESH         ), // I [C_WR_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH_ASSERT  ( PROG_FULL_THRESH_ASSERT  ), // I [C_WR_PNTR_WIDTH-1:0]
+    .PROG_FULL_THRESH_NEGATE  ( PROG_FULL_THRESH_NEGATE  ), // I [C_WR_PNTR_WIDTH-1:0]
+    .RD_EN                    ( RD_EN                    ), // I
+    .RST                      ( RST                      ), // I
+    .RST_FULL_GEN             ( RST_FULL_GEN             ), // I
+    .RST_FULL_FF              ( RST_FULL_FF              ), // I
+    .SRST                     ( SRST                     ), // I
+    .WR_EN                    ( WR_EN                    ), // I
+    .INJECTDBITERR            ( INJECTDBITERR            ), // I
+    .INJECTSBITERR            ( INJECTSBITERR            ), // I
+    .ALMOST_EMPTY             ( ALMOST_EMPTY             ), // O
+    .ALMOST_FULL              ( ALMOST_FULL              ), // O
+    .DATA_COUNT               ( DATA_COUNT               ), // O [C_DATA_COUNT_WIDTH-1:0]
+    .DOUT                     ( DOUT                     ), // O [C_DOUT_WIDTH-1:0]
+    .EMPTY                    ( EMPTY                    ), // O
+    .FULL                     ( FULL                     ), // O
+    .OVERFLOW                 ( OVERFLOW                 ), // O
+    .PROG_EMPTY               ( PROG_EMPTY               ), // O
+    .PROG_FULL                ( PROG_FULL                ), // O
+    .VALID                    ( VALID                    ), // O
+    .UNDERFLOW                ( UNDERFLOW                ), // O
+    .WR_ACK                   ( WR_ACK                   ), // O
+    .SBITERR                  ( SBITERR                  ), // O
+    .DBITERR                  ( DBITERR                  )  // O
+); // instantiation of fifo_generator_v6_2_bhv_ver_ss
+//========================================
+//
+// Instantiation: fifo_generator_v6_2_bhv_ver_preload0
+//
+//========================================
+wire        RD_CLK;
+wire        RD_RST;
+wire        SRST;
+wire        RD_EN;
+wire        FIFOEMPTY;
+wire [C_DOUT_WIDTH-1:0] FIFODATA;
+wire        FIFOSBITERR;
+wire        FIFODBITERR;
+wire [C_DOUT_WIDTH-1:0] USERDATA;
+wire        USERVALID;
+wire        USERUNDERFLOW;
+wire        USEREMPTY;
+wire        USERALMOSTEMPTY;
+wire        RAMVALID;
+wire        FIFORDEN;
+wire        USERSBITERR;
+wire        USERDBITERR;
+
+fifo_generator_v6_2_bhv_ver_preload0  #(
+    .C_DOUT_RST_VAL      ( "" ),
+    .C_DOUT_WIDTH        ( 8 ),
+    .C_HAS_RST           ( 0 ),
+    .C_ENABLE_RST_SYNC   ( 0 ),
+    .C_HAS_SRST          ( 0 ),
+    .C_USE_DOUT_RST      ( 0 ),
+    .C_USE_ECC           ( 0 ),
+    .C_USERVALID_LOW     ( 0 ),
+    .C_USERUNDERFLOW_LOW ( 0 ),
+    .C_MEMORY_TYPE       ( 0 )
+) fifo_generator_v6_2_bhv_ver_preload0_inst (
+    .RD_CLK          ( RD_CLK          ), // I
+    .RD_RST          ( RD_RST          ), // I
+    .SRST            ( SRST            ), // I
+    .RD_EN           ( RD_EN           ), // I
+    .FIFOEMPTY       ( FIFOEMPTY       ), // I
+    .FIFODATA        ( FIFODATA        ), // I [C_DOUT_WIDTH-1:0]
+    .FIFOSBITERR     ( FIFOSBITERR     ), // I
+    .FIFODBITERR     ( FIFODBITERR     ), // I
+    .USERDATA        ( USERDATA        ), // O [C_DOUT_WIDTH-1:0]
+    .USERVALID       ( USERVALID       ), // O
+    .USERUNDERFLOW   ( USERUNDERFLOW   ), // O
+    .USEREMPTY       ( USEREMPTY       ), // O
+    .USERALMOSTEMPTY ( USERALMOSTEMPTY ), // O
+    .RAMVALID        ( RAMVALID        ), // O
+    .FIFORDEN        ( FIFORDEN        ), // O
+    .USERSBITERR     ( USERSBITERR     ), // O
+    .USERDBITERR     ( USERDBITERR     )  // O
+); // instantiation of fifo_generator_v6_2_bhv_ver_preload0
